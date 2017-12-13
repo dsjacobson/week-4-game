@@ -16,7 +16,7 @@ var runningCount = 0;
 var winCount = 0;
 var lossCount = 0;
 
-var randomNumber = Math.floor(Math.random() * 120) +1;
+var randomNumber = Math.floor(Math.random() * 101) +19;
 
 var crystalOne = Math.floor(Math.random() *12) +1;
 var crystalTwo = Math.floor(Math.random() *12) +1;
@@ -24,8 +24,10 @@ var crystalThree = Math.floor(Math.random() *12) +1;
 var crystalFour = Math.floor(Math.random() *12) +1;
 
 console.log(crystalOne);
-console.log(winCount);
-console.log(crystalOne + crystalTwo + crystalThree + crystalFour);
+console.log(crystalTwo);
+console.log(crystalThree);
+console.log(crystalFour);
+
 // Functions
 //=========================================
 
