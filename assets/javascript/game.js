@@ -9,36 +9,54 @@ var crystalTwo = 0;
 var crystalThree = 0;
 var crystalFour = 0;  */
 
+
+
+var crystalOne = 0;
+var crystalTwo = 0;
+var crystalThree = 0;
+var crystalFour = 0;
+var randomNumber = 0;
+
 var runningCount = 0;
 
 // Game Counters
 
+
+
 var winCount = 0;
 var lossCount = 0;
 
-var randomNumber = Math.floor(Math.random() * 101) +19;
 
-var crystalOne = Math.floor(Math.random() *12) +1;
-var crystalTwo = Math.floor(Math.random() *12) +1;
-var crystalThree = Math.floor(Math.random() *12) +1;
-var crystalFour = Math.floor(Math.random() *12) +1;
+
+
+
+randomNumber = Math.floor(Math.random() * 101) +19;
+
+crystalOne = Math.floor(Math.random() *12) +1;
+crystalTwo = Math.floor(Math.random() *12) +1;
+crystalThree = Math.floor(Math.random() *12) +1;
+crystalFour = Math.floor(Math.random() *12) +1;
 
 console.log(crystalOne);
 console.log(crystalTwo);
 console.log(crystalThree);
 console.log(crystalFour);
 
+
+
 // Functions
 //=========================================
 
 
-
 $("#random-number").text(randomNumber);
+
+
 
 $("#crystal-one").text(crystalOne);
 $("#crystal-two").text(crystalTwo);
 $("#crystal-three").text(crystalThree);
 $("#crystal-four").text(crystalFour);
+
 
 
 $("#crystal-one").on("click", function() {
@@ -52,6 +70,7 @@ $("#crystal-one").on("click", function() {
 		winCount++;
 		$("#wins").text(winCount);
 		$("#winsLosses").text("You Won");
+		
 	}
 
 	if(runningCount > randomNumber) {
@@ -59,6 +78,7 @@ $("#crystal-one").on("click", function() {
 		lossCount++;
 		$("#losses").text(lossCount);
 		$("#winsLosses").text("You Lost");
+		
 
 	}
 
@@ -76,6 +96,7 @@ $("#crystal-two").on("click", function() {
 		winCount++;
 		$("#wins").text(winCount);
 		$("#winsLosses").text("You Won");
+		
 	}
 
 	if(runningCount > randomNumber) {
@@ -83,6 +104,7 @@ $("#crystal-two").on("click", function() {
 		lossCount++;
 		$("#losses").text(lossCount);
 		$("#winsLosses").text("You Lost");
+		
 
 	}
 
@@ -100,6 +122,8 @@ $("#crystal-three").on("click", function() {
 		winCount++;
 		$("#wins").text(winCount);
 		$("#winsLosses").text("You Won");
+
+		
 	}
 
 	if(runningCount > randomNumber) {
@@ -107,6 +131,7 @@ $("#crystal-three").on("click", function() {
 		lossCount++;
 		$("#losses").text(lossCount);
 		$("#winsLosses").text("You Lost");
+
 
 	}
 
@@ -125,6 +150,7 @@ $("#crystal-four").on("click", function() {
 		winCount++;
 		$("#wins").text(winCount);
 		$("#winsLosses").text("You Won");
+		
 	}
 
 	if(runningCount > randomNumber) {
@@ -132,14 +158,18 @@ $("#crystal-four").on("click", function() {
 		lossCount++;
 		$("#losses").text(lossCount);
 		$("#winsLosses").text("You Lost");
+		
+
+
+
 
 	}
 
-	
+
 });
 
 
-console.log($("#crystal-two"));
+
 
 
 
